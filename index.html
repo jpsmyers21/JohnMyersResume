@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Myers - Resume & Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif; }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+
+
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header -->
+  <header class="flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-blue-600 to-slate-800 text-white py-10 md:py-14 px-4">
+    <img src="./resources/Headshot (2).png" alt="John Myers headshot" class="w-36 h-36 rounded-full border-4 border-white object-cover mb-6 md:mb-0 md:mr-10 bg-white"/>
+    <div class="text-center md:text-left">
+      <h1 class="text-4xl font-bold text-cyan-300 mb-2">John Myers</h1>
+      <h2 class="text-xl text-cyan-100 mb-4 font-semibold">Busienss Analyst</h2>
+      <div class="flex flex-wrap gap-4 justify-center md:justify-start text-base text-slate-100 mb-2">
+        <span class="flex items-center gap-1">📧 <a href="mailto:jpsmyers21@gmail.com" class="underline hover:text-cyan-200">jpsmyers21@gmail.com</a></span>
+        <span class="flex items-center gap-1">📱 +1 570 290 6709</span>
+        <span class="flex items-center gap-1">💼 <a href="https://www.linkedin.com/in/john-myers-41820190/" target="_blank" class="underline hover:text-cyan-200">LinkedIn</a></span>
+        <span class="flex items-center gap-1">📍 Scranton, PA</span>
+      </div>
+      <a href="./resources/John Myers Resume.pdf" download class="bg-blue-600 hover:bg-blue-700 px-6 py-2 mt-4 rounded-lg transition-colors inline-block">
+        📄 Download My Resume
+      </a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow sticky top-0 z-10 border-b border-slate-200">
+    <ul class="flex justify-center gap-8 py-3 text-blue-700 font-semibold text-base">
+      <li><a href="#overview" class="hover:text-cyan-500">Overview</a></li>
+      <li><a href="#work-experience" class="hover:text-cyan-500">Work Experience</a></li>
+      <li><a href="#education" class="hover:text-cyan-500">Education/Certifications</a></li>
+      <li><a href="#skills" class="hover:text-cyan-500">Skills</a></li>
+      <li><a href="#portfolio" class="hover:text-cyan-500">Portfolio</a></li>
+      <li><a href="#links" class="hover:text-cyan-500">Links</a></li>
+    </ul>
+  </nav>
+
+  <main class="max-w-6xl mx-auto my-10 px-2 grid gap-10">
+
+    <!-- Overview -->
+    <section id="overview" class=" fade-in p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+      <h2 class="text-blue-700 text-2xl font-bold border-b border-slate-200 pb-2 mb-3">Professional Summary</h2>
+      <div>
+      <h4 class="font-bold text-1xl text-center mt-2 mb-4">Strategic Business Analyst | Agile Delivery | Scalable Systems | Cross-Functional Leadership</h4>
+      <p>
+        Versatile business analyst with a track record of enabling digital transformation through data-first 
+        strategy, Agile methodology, and scalable process design. Proven ability to align cross-functional 
+        stakeholders, deliver requirements across global teams, and drive measurable value through system 
+        optimization, regulatory compliance, and user-centered delivery. Industry experience spans SaaS, 
+        FinTech, and Healthcare.
+      </p>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work-experience" class="fade-in bg-white p-6 rounded-lg shadow-sm border-r-4 border-blue-500">
+      <h2 class="text-blue-700 text-2xl font-bold border-b border-slate-200 pb-2 mb-3">Work Experience</h2>
+      <div class="space-y-5">
+        <div class="border border-slate-200 rounded-lg bg-slate-50 p-5">
+          <div class="font-semibold text-blue-700">Financial Services Professional</div>
+          <div class="text-slate-500 text-sm mb-2">New York Life / Scranton PA / November 2024 - Current</div>
+          <ul class="list-disc ml-6 text-base space-y-1">
+            <li>Built and maintained a portfolio of 50+ clients, guiding financial planning around securities, retirement, and insurance.</li>
+            <li>Delivered structured presentations and tools that improved client financial literacy and reduced decision-making time.</li>
+          </ul>
+        </div>        
+
+        <div class="border border-slate-200 rounded-lg bg-slate-50 p-5">
+          <div class="font-semibold text-blue-700">Business Owner</div>
+          <div class="text-slate-500 text-sm mb-2">JPs Place / Scranton PA / September 2022 - March 2024</div>
+          <ul class="list-disc ml-6 text-base space-y-1">
+            <li>Built and managed all aspects of a local business, including compliance processes, hiring, vendor contract negotiation, marketing, payroll, and inventory workflows.</li>
+          </ul>
+        </div>
+
+        <div class="border border-slate-200 rounded-lg bg-slate-50 p-5">
+          <div class="font-semibold text-blue-700">Business Analyst Consultant</div>
+          <div class="text-slate-500 text-sm mb-2">Hays Talent Solutions / Remote / October 2023 - January 2024</div>
+          <ul class="list-disc ml-6 text-base space-y-1">
+            <li>Designed and implemented an enterprise-wide innovation intake and prioritization process, leading to a 3x increase in stakeholder engagement.</li>
+            <li>Spearheaded the development of a medication dosing error tracking solution; captured functional requirements, wrote user stories, built Tableau dashboards, and ensured compliance with regulatory protocols.</li>
+            <li>Served as product liaison between development and QA teams to ensure delivery continuity and sprint alignment.</li>
+            </ul>
+        </div>
+
+        <div class="border border-slate-200 rounded-lg bg-slate-50 p-5">
+          <div class="font-semibold text-blue-700">Business Analyst</div>
+          <div class="text-slate-500 text-sm mb-2">Cognizant / Remote / January 2021 - July 2023</div>
+          <ul class="list-disc ml-6 text-base space-y-1">
+            <li>Led requirements gathering for a commercial data lake migration project post-acquisition, impacting 20+ business units</li>
+            <li>Managed full UAT lifecycle across multiple systems, including test case writing, execution tracking, and sign-off.</li>
+            <li>Partnered with PMO to clean and migrate data to new systems during a Fortune 100 corporate separation initiative.</li>
+            <li>Created interactive dashboards in Tableau to support executive-level reporting and compliance tracking.</li>
+          </ul>
+        </div>
+
+        <div class="border border-slate-200 rounded-lg bg-slate-50 p-5">
+          <div class="font-semibold text-blue-700">Business Analyst</div>
+          <div class="text-slate-500 text-sm mb-2">Revature / Remote / May 2019 - August 2020</div>
+          <ul class="list-disc ml-6 text-base space-y-1">
+            <li>Collaborated with remote developers to create a patient onboarding system using the Scrum methodology. Participated in user story collection, product backlog grooming, user story grooming, sprint planning, sprint backlog creation, and other scrum ceremonies as a product owner and scrum master for a single sprint.</li>
+            <li>Collected, organized, and analyzed various information on a group of athletes to develop a ranking and created a SQL and Unix based decision engine that can complete athlete performance data analytics and rank them on selected parameters.</li>
+            <li>Reverse engineered requirements for a training performance tracking system through collaboration with the systems product owner. Responsible for requirement elicitation and analysis, and documentation such as business case, BRD, Use Case Specifications, RTM, and Test Cases.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education and Certifications -->
+    <section id="education" class="fade-in bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+      <h2 class="text-blue-700 text-2xl font-bold border-b border-slate-200 pb-2 mb-3">Education and Certifications</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Degree Block -->
+    <div class="border border-slate-200 rounded-lg bg-slate-50 p-5 flex flex-col h-full items-center">
+      <h4 class="font-semibold text-blue-700 mb-1">Degree</h4>
+      <div class="text-slate-600 font-medium text-center">BS in Mathematics</div>
+      <div class="text-slate-500 text-sm text-center mb-2">Norwich University</div>
+      <ul class="list-disc ml-4 text-base mb-2 text-left">
+        <li>Graduated: December 2017</li>
+        <li>Military College of Vermont (MCV) Diploma</li>
+        <li>Study Abroad: Macquarie University, Australia</li>
+      </ul>
+      <a href="https://norwich.edu" target="_blank" class="mt-auto">
+        <img src="./resources/norwich-logo.jpg" alt="Norwich University logo" class="w-16 h-16 rounded-lg border border-slate-200 object-contain transition-shadow duration-300 hover:shadow-lg bg-white"/>
+      </a>
+    </div>
+
+    <!-- CSM Block -->
+    <div class="border border-slate-200 rounded-lg bg-slate-50 p-5 flex flex-col h-full items-center">
+      <h4 class="font-semibold text-blue-700 mb-1">Certification</h4>
+      <div class="text-slate-600 font-medium text-center">CSM - Certified Scrum Master</div>
+      <div class="text-slate-500 text-sm text-center mb-2">ScrumAlliance</div>
+      <ul class="list-disc ml-4 text-base mb-2 text-left">
+        <li>Certification ID: 001615595</li>
+        <li>Date Earned: 02/02/2024</li>
+        <li>Expires: 02/02/2026</li>
+      </ul>
+      <a href="https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster?_gl=1*xjh3aw*_up*MQ..&gclid=Cj0KCQjw-ai0BhDPARIsAB6hmP5sNRjxmyzUvYcKlo76mbFNHkRdGoUGluiSPJ3IQCbMYJqB6hGtU8IaAgWCEALw_wcB" target="_blank" class="mt-auto">
+        <img src="./resources/csm-logo.jpg" alt="CSM logo" class="w-16 h-16 rounded-lg border border-slate-200 object-contain bg-white transition-shadow duration-300 hover:shadow-lg"/>
+      </a>
+    </div>
+
+    <!-- Six Sigma Block -->
+    <div class="border border-slate-200 rounded-lg bg-slate-50 p-5 flex flex-col h-full items-center">
+      <h4 class="font-semibold text-blue-700 mb-1">Certification</h4>
+      <div class="text-slate-600 font-medium text-center">Lean Six Sigma - Yellow Belt</div>
+      <div class="text-slate-500 text-sm text-center mb-2">C.S.S.C. / Six Sigma Online</div>
+      <ul class="list-disc ml-4 text-base mb-2 text-left">
+        <li>Certification ID: Y2EzMDM3MjQtMTA3Mzkx</li>
+        <li>Date Earned: 05/21/2024</li>
+      </ul>
+      <a href="https://www.sixsigmaonline.org/" target="_blank" class="mt-auto">
+        <img src="./resources/cssc-logo.jpg" alt="CSSC logo" class="w-16 h-16 rounded-lg border border-slate-200 object-contain bg-white transition-shadow duration-300 hover:shadow-lg"/>
+      </a>
+    </div>
+
+    <!-- PA License Block -->
+    <div class="border border-slate-200 rounded-lg bg-slate-50 p-5 flex flex-col h-full items-center">
+      <h4 class="font-semibold text-blue-700 mb-1">License</h4>
+      <div class="text-slate-600 font-medium text-center">Resident Producer - PA Life, Accident and Health</div>
+      <div class="text-slate-500 text-sm text-center mb-2">PA Insurance Department</div>
+      <ul class="list-disc ml-4 text-base mb-2 text-left">
+        <li>Certification ID: 1155985</li>
+        <li>Date Earned: 10/23/2023</li>
+        <li>Expires: 09/30/2026</li>
+      </ul>
+      <a href='https://apps02.ins.pa.gov/producer/ilist1.asp' target="_blank" class="mt-auto">
+        <img src="./resources/pa-logo.png" alt="PA Insurance logo" class="w-16 h-16 rounded-lg border border-slate-200 object-contain bg-white transition-shadow duration-300 hover:shadow-lg"/>
+      </a>
+    </div>
+
+    <!-- Series 6 Block -->
+    <div class="border border-slate-200 rounded-lg bg-slate-50 p-5 flex flex-col h-full items-center">
+      <h4 class="font-semibold text-blue-700 mb-1">License</h4>
+      <div class="text-slate-600 font-medium text-center">Series 6</div>
+      <div class="text-slate-500 text-sm text-center mb-2">FINRA</div>
+      <ul class="list-disc ml-4 text-base mb-2 text-left">
+        <li>Certification ID: 1155985</li>
+        <li>Date Earned: 10/23/2023</li>
+        <li>Expires: 09/30/2026</li>
+      </ul>
+      <a href='https://apps02.ins.pa.gov/producer/ilist1.asp' target="_blank"  class="mt-auto">
+        <img src="./resources/pa-logo.png" alt="PA Insurance logo" class="w-16 h-16 rounded-lg border border-slate-200 object-contain bg-white transition-shadow duration-300 hover:shadow-lg"/>
+      </a>
+    </div>
+
+    <!-- Series 63 Block -->
+    <div class="border border-slate-200 rounded-lg bg-slate-50 p-5 flex flex-col h-full items-center">
+      <h4 class="font-semibold text-blue-700 mb-1">License</h4>
+      <div class="text-slate-600 font-medium text-center">Series 63</div>
+      <div class="text-slate-500 text-sm text-center mb-2">FINRA</div>
+      <ul class="list-disc ml-4 text-base mb-2 text-left">
+        <li>Certification ID: 1155985</li>
+        <li>Date Earned: 10/23/2023</li>
+        <li>Expires: 09/30/2026</li>
+      </ul>
+      <a href='https://apps02.ins.pa.gov/producer/ilist1.asp' target="_blank" class="mt-auto">
+        <img src="./resources/pa-logo.png" alt="PA Insurance logo" class="w-16 h-16 rounded-lg border border-slate-200 object-contain bg-white transition-shadow duration-300 hover:shadow-lg"/>
+      </a>
+    </div>
+  </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="fade-in bg-white p-6 rounded-lg shadow-sm border-r-4 border-blue-500">
+      <h2 class="text-blue-700 text-2xl font-bold border-b border-slate-200 pb-2 mb-3">Skills & Tools</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Skills Column -->
+        <div>
+          <h4 class="font-semibold text-blue-700 mb-2 underline">Professional Skills</h4>
+          <ul class="list-disc ml-6 text-base space-y-1">
+            <li>Project Management</li>
+            <li>Agile/Scrum Development</li>
+            <li>Requirements Analysis</li>
+            <li>Business Process Design</li>
+            <li>Stakeholder Engagement / Communication</li>
+            <li>Data Analysis</li>
+            <li>UAT/Test Case Writing</li>
+          </ul>
+       </div>
+       <!-- Tools/Technology Column -->
+        <div>
+         <h4 class="font-semibold text-blue-700 mb-2 underline">Tools & Technologies</h4>
+          <ul class="list-disc ml-6 text-base space-y-1">
+            <li>Jira / Confluence</li>
+            <li>Tableau</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Excel / Google Sheets</li>
+           <li>Git / Github</li>
+         </ul>
+        </div>
+     </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="fade-in bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+      <h2 class="text-blue-700 text-2xl font-bold border-b border-slate-200 pb-2 mb-3">Portfolio</h2>
+      <div class="space-y-5">
+        <div class="border border-slate-200 rounded-lg bg-slate-50 p-5">
+          <h4 class="font-semibold text-blue-700">Portfolio Website</h4>
+          <span class="block text-slate-700">A personalized webpage to display my resume, portfolio, knowledge and skills</span>
+        </div>
+        <div class="border border-slate-200 rounded-lg bg-slate-50 p-5">
+          <h4 class="font-semibold text-blue-700">NGen Products</h4>
+          <span class="block text-slate-700">Website for NGen Products: a startup technology innovation company focused on AI innovation and access through software applications</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 fade-section">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="mb-4">Let's connect and build something amazing together!</p>
+            <div class="flex justify-center gap-6">
+                <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition-colors">
+                    📧 Email Me
+                </button>
+                <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition-colors">
+                    💼 LinkedIn
+                </button>
+                <a href="./resources/John Myers Resume.pdf" download class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition-colors inline-block">
+                  📄 Download My Resume
+                </a>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+    
+    // Fade-in effect for sections
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.fade-in').forEach(section => observer.observe(section));
+      // Insert current date in footer
+      const dateSpan = document.getElementById('current-date');
+      if (dateSpan) {
+        const now = new Date();
+        dateSpan.textContent = now.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+      }
+    });
+
+  </script>
+</body>
+</html>
