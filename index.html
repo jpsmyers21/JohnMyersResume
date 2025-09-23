@@ -73,6 +73,8 @@
     <!-- Work Experience -->
     <section id="work-experience" class="fade-in bg-white p-6 rounded-lg shadow-sm border-r-4 border-blue-500">
       <h2 class="text-blue-700 text-2xl font-bold border-b border-slate-200 pb-2 mb-3">Work Experience</h2>
+
+            <!-- Visible cards -->
       <div class="space-y-5">
         <div class="border-l-4 border-b-2 border-sky-200 rounded-lg bg-white p-5">
           <div class="font-semibold text-blue-700">Financial Services Professional</div>
@@ -122,6 +124,38 @@
           </ul>
         </div>
 
+            <!-- Expandable cards -->
+        <div id="more-experience" class="space-y-5 hidden fade-in">
+          <div class="fade-in border-l-4 border-b-2 border-sky-200 rounded-lg bg-white p-5">
+            <div class="font-semibold text-blue-700">Interim Head Swimming and Diving Coach</div>
+            <div class="text-slate-500 text-sm mb-2">Norwich University / Northfield VT / September 2018 - May 2019</div>
+            <ul class="list-disc ml-6 text-base space-y-1">
+              <li>Coached NCAA Division 3 Swimming and Diving Teams of 45+ students</li>
+              <li>Managed the program office including athlete schedules, team budget, travel arrangements, fundraising, recruitment, and pool operation and usage</li>
+            </ul>
+          </div>  
+          <div class="fade-in border-l-4 border-b-2 border-sky-200 rounded-lg bg-white p-5">
+            <div class="font-semibold text-blue-700">Diving Coach</div>
+            <div class="text-slate-500 text-sm mb-2">University of Scranton / Scranton PA / August 2017 - Mar 2018</div>
+            <ul class="list-disc ml-6 text-base space-y-1">
+              <li>Led the development of a young diving program through coaching, collaborating with Head Coach, and running team events</li>
+            </ul>
+          </div>  
+          <div class="fade-in border-l-4 border-b-2 border-sky-200 rounded-lg bg-white p-5">
+            <div class="font-semibold text-blue-700">Laborer</div>
+            <div class="text-slate-500 text-sm mb-2">B Dry Waterproofing / Scranton PA / September 2017 - September 2018</div>
+            <ul class="list-disc ml-6 text-base space-y-1">
+              <li>Prepared and installed proprietary waterproofing systems for clients</li>
+              <li>Comminicated with clients on needs and system operation</li>
+            </ul>
+          </div>  
+        </div>  
+            <!-- View More Button -->
+        <div class="text-center mt-4">
+          <button id="view-more-btn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
+           View More
+          </button>
+        </div>
       </div>
     </section>
 
@@ -322,12 +356,25 @@
         { threshold: 0.12 }
       );
       document.querySelectorAll('.fade-in').forEach(section => observer.observe(section));
+      
       // Insert current date in footer
       const dateSpan = document.getElementById('current-date');
       if (dateSpan) {
         const now = new Date();
         dateSpan.textContent = now.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
       }
+    });
+
+    //View More Function
+      document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById('view-more-btn');
+      const more = document.getElementById('more-experience');
+      let expanded = false;
+      btn.addEventListener('click', function () {
+        expanded = !expanded;
+        more.classList.toggle('hidden', !expanded);
+        btn.textContent = expanded ? 'View Less' : 'View More';
+      });
     });
 
   </script>
